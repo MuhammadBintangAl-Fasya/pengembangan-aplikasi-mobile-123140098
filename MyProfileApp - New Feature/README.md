@@ -1,4 +1,4 @@
-## TUGAS 3 PENGEMBANGAN APLIKASI MOBILE (My Profile App)
+## TUGAS 4 Penambahan Fitur (My Profile App)
 
 
 **Nama:** Muhammad Bintang Al-Fasya<br>
@@ -8,7 +8,7 @@
 ## 📸 Screenshot Aplikasi
 
 ### Android
-![alt text](https://github.com/user-attachments/assets/159ab8ed-4328-4a54-8ee0-500e7cd518dd)
+![alt text](https://github.com/user-attachments/assets/f718c57a-11df-4ea0-b235-6929c36ca9a0)
 
 ### Desktop
-![alt text](https://github.com/user-attachments/assets/8d1f251e-61e1-4751-9ac5-97715eb40f03)
+![alt text](https://github.com/user-attachments/assets/c4a52ac3-b3cb-4bd9-90ff-31b044243548)
