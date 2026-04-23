@@ -147,33 +147,40 @@ fun NetworkStatusIndicator() {
     val isConnected by networkMonitor.observeConnectivity()
         .collectAsState(initial = true)
 
-    AnimatedVisibility(
-        visible = !isConnected,
-        enter = expandVertically(animationSpec = tween(300)) + fadeIn(animationSpec = tween(300)),
-        exit = shrinkVertically(animationSpec = tween(300)) + fadeOut(animationSpec = tween(300))
+    val backgroundColor = animateColorAsState(
+        targetValue = if (isConnected)
+            MaterialTheme.colorScheme.primaryContainer
+        else
+            MaterialTheme.colorScheme.error,
+        animationSpec = tween(500)
+    )
+
+    val contentColor = if (isConnected)
+        MaterialTheme.colorScheme.onPrimaryContainer
+    else
+        MaterialTheme.colorScheme.onError
+
+    Surface(
+        modifier = Modifier.fillMaxWidth(),
+        color = backgroundColor.value
     ) {
-        Surface(
-            modifier = Modifier.fillMaxWidth(),
-            color = MaterialTheme.colorScheme.error
+        Row(
+            modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            Row(
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
-            ) {
-                Icon(
-                    imageVector = Icons.Default.CloudOff,
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.onError,
-                    modifier = Modifier.size(18.dp)
-                )
-                Text(
-                    text = "Tidak Ada Koneksi Internet",
-                    color = MaterialTheme.colorScheme.onError,
-                    fontSize = 13.sp,
-                    fontWeight = FontWeight.Medium
-                )
-            }
+            Icon(
+                imageVector = if (isConnected) Icons.Default.Cloud else Icons.Default.CloudOff,
+                contentDescription = null,
+                tint = contentColor,
+                modifier = Modifier.size(18.dp)
+            )
+            Text(
+                text = if (isConnected) "Terhubung ke Internet" else "Tidak Ada Koneksi Internet",
+                color = contentColor,
+                fontSize = 13.sp,
+                fontWeight = FontWeight.Medium
+            )
         }
     }
 }

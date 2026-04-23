@@ -153,58 +153,36 @@ composeApp/src/
 | Navigation Compose | Screen routing |
 | Material 3 | Design system |
 
----
-
-## ✅ Checklist Tugas
-
-### Koin DI Setup (25%)
-- ✅ commonModule: Settings, NotesDatabase, NoteRepository, SettingsManager, ViewModels
-- ✅ platformModule (expect/actual): DatabaseDriverFactory, DeviceInfo, NetworkMonitor, BatteryInfo
-- ✅ Inisialisasi Koin di MainActivity (Android) dan main.kt (JVM)
-- ✅ Semua dependencies di-inject via koinViewModel() dan koinInject()
-
-### expect/actual Pattern (25%)
-- ✅ DeviceInfo: getDeviceName(), getOsVersion(), getAppVersion()
-- ✅ NetworkMonitor: isConnected(), observeConnectivity() → Flow<Boolean>
-- ✅ DatabaseDriverFactory: createDriver() → SqlDriver
-
-### UI Integration (20%)
-- ✅ Device Info ditampilkan di Settings screen (nama perangkat, OS, versi app)
-- ✅ Battery Info ditampilkan di Settings screen (level, status charging, icon dinamis)
-- ✅ Network Status Indicator di NoteListScreen (animated banner saat offline)
-
-### Architecture (20%)
-- ✅ Clean separation: di/, platform/, data/, viewmodel/, screens/
-- ✅ expect/actual pattern untuk semua platform-specific code
-- ✅ Koin modules terpisah per layer (common vs platform)
-
-### Code Quality (10%)
-- ✅ Clean code tanpa komentar berlebihan
-- ✅ MVVM + Repository pattern
-
-### Bonus (+10%)
-- ✅ BatteryInfo expect/actual: getBatteryLevel(), isCharging()
-- ✅ Android: BatteryManager API
-- ✅ JVM: Stub implementation
 
 ---
 
 ## 📸 Screenshot
 
-### 1. Notes List Screen (dengan Network Status Indicator)
-> Screenshot menampilkan daftar notes dengan indicator koneksi internet di bagian atas
+### 1. Settings Screen — Device Info (via Koin DI)
+> Menampilkan informasi perangkat (nama, OS, versi) yang di-inject menggunakan Koin `koinInject<DeviceInfo>()`
 
-### 2. Settings Screen (dengan Device Info + Battery Info)
-> Screenshot menampilkan informasi perangkat dan status baterai di halaman Settings
+![Settings - Device Info](https://github.com/user-attachments/assets/d212509e-8f97-4c23-9373-27736aad7c6d)
 
-### 3. Network Offline Indicator
-> Screenshot saat airplane mode aktif, banner merah "Tidak Ada Koneksi Internet" muncul
+### 2. Network Status — Online ✅
+> Indikator hijau di main screen saat perangkat terhubung ke internet
+
+![Network Online](https://github.com/user-attachments/assets/48955d8b-b7cb-4aa1-b632-4808e3669218)
+
+### 3. Network Status — Offline ❌
+> Indikator merah di main screen saat perangkat tidak ada koneksi internet
+
+![Network Offline](https://github.com/user-attachments/assets/886dbb66-44c8-4277-9c21-bfde2ad53923)
+
+### 4. Notes List Screen
+> Tampilan utama Notes dengan Network Status Indicator di bagian atas
+
+![Notes List](https://github.com/user-attachments/assets/3059d13f-5570-4572-ac1d-5ac529b8d550)
 
 ---
 
 ## 🎥 Demo Video
 
-🔗 **Link Video:** *(tambahkan link video demo 45 detik)*
+🔗 **Link Video Demo:** [VideoDemo](masukkanlink)
 
 ---
 
