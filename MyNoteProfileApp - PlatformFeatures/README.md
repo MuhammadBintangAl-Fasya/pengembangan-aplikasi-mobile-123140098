@@ -173,10 +173,7 @@ composeApp/src/
 
 ![Network Offline](https://github.com/user-attachments/assets/886dbb66-44c8-4277-9c21-bfde2ad53923)
 
-### 4. Notes List Screen
-> Tampilan utama Notes dengan Network Status Indicator di bagian atas
 
-![Notes List](https://github.com/user-attachments/assets/3059d13f-5570-4572-ac1d-5ac529b8d550)
 
 ---
 
