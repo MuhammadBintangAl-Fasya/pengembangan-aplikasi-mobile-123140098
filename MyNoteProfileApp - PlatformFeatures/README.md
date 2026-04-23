@@ -182,7 +182,7 @@ composeApp/src/
 
 ## 🎥 Demo Video
 
-🔗 **Link Video Demo:** [VideoDemo](masukkanlink)
+🔗 **Link Video Demo:** [VideoDemo](https://drive.google.com/file/d/1GCEDwPWYN0SHsgfhpkcY4r8dOzXY84rs/view?usp=sharing)
 
 ---
 
