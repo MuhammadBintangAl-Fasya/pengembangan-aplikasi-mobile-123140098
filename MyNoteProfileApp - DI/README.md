@@ -249,3 +249,34 @@ GEMINI_API_KEY=your_api_key_here
 2. AI CHAT:
 
 ![Hasil AI Chat](https://github.com/user-attachments/assets/590e8eec-e121-42b0-8af1-c321d25bf94d)
+
+---
+
+## 🎬 Video Demo
+
+Video demo menunjukkan implementasi Dependency Injection dan Testing pada aplikasi:
+
+🔗 **[Klik untuk menonton Video Demo](https://drive.google.com/file/d/1FpvJ4XQwck1thpTbQORHauHrk4oPEgvb/view?usp=drive_link)**
+
+---
+
+## ✅ Hasil Testing
+
+### Test Results — 25 Tests PASSED ✅
+
+![Hasil Test Berhasil](https://github.com/user-attachments/assets/c0ad109a-fb9e-4d98-8570-1b2b1cc1ce41)
+
+| Test Suite | Jumlah Test | Status |
+|------------|:-----------:|:------:|
+| `NoteRepositoryTest` | 9 | ✅ PASSED |
+| `NotesViewModelTest` | 10 | ✅ PASSED |
+| `NotesScreenTest` | 5 | ✅ PASSED |
+| **Total** | **25** | **✅ ALL PASSED** |
+
+### Code Coverage
+
+![Coverage 1](https://github.com/user-attachments/assets/26873032-2e20-4d64-9896-acb621992f17)
+
+![Coverage 2](https://github.com/user-attachments/assets/bace4449-daa6-445b-a6f2-4b1f2bacc3b9)
+
+![Coverage 3](https://github.com/user-attachments/assets/1ad61af4-38db-4fc1-9ab1-a4f05d61ab45)
