@@ -238,19 +238,6 @@ GEMINI_API_KEY=your_api_key_here
 4. Sync Gradle dependencies
 5. Run di Android emulator atau Desktop (JVM)
 
-## Dokumentasi
-
-1. AI SUMMARY:
-
-![Klik Tombol AI Summary](https://github.com/user-attachments/assets/1638e963-73c4-4584-90a3-1f9c6fc21182)
-
-![Hasil AI Summary](https://github.com/user-attachments/assets/858b78cd-d81b-4439-b6e5-868f252f10a1)
-
-2. AI CHAT:
-
-![Hasil AI Chat](https://github.com/user-attachments/assets/590e8eec-e121-42b0-8af1-c321d25bf94d)
-
----
 
 ## 🎬 Video Demo
 
